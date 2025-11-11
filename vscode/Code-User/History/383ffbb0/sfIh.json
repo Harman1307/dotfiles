@@ -1,0 +1,12 @@
+{
+  "window.titleBarStyle": "custom",
+  "window.menuBarVisibility": "toggle",
+  "workbench.statusBar.visible": true,
+  "editor.fontFamily": "'JetBrains Mono', 'Fira Code', monospace",
+  "editor.fontSize": 14,
+  "editor.lineHeight": 22,
+  "editor.cursorBlinking": "smooth",
+  "editor.minimap.enabled": false,
+"workbench.activityBar.visible": true,
+"files.autoSave": "afterDelay"
+}

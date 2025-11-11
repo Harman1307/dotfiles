@@ -1,0 +1,31 @@
+#!/bin/bash
+source ~/.cache/wal/colors.sh
+
+# Brave config directory
+BRAVE_DIR="$HOME/.config/BraveSoftware/Brave-Browser/Default"
+mkdir -p "$BRAVE_DIR"
+
+# Create custom theme colors
+cat > /tmp/brave-theme.json << THEME
+{
+  "name": "Pywal Theme",
+  "version": "1.0",
+  "manifest_version": 3,
+  "theme": {
+    "colors": {
+      "toolbar": "${color0}",
+      "tab_text": "${color7}",
+      "tab_background_text": "${color8}",
+      "bookmark_text": "${color7}",
+      "ntp_background": "${color0}",
+      "ntp_text": "${color7}",
+      "button_background": "${color8}",
+      "frame": "${color0}",
+      "frame_inactive": "${color0}",
+      "tab_background": "${color0}"
+    }
+  }
+}
+THEME
+
+echo "✓ Brave theme colors updated"

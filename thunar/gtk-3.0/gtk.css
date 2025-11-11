@@ -1,0 +1,447 @@
+/* ===== FORCE DARK BACKGROUNDS ===== */
+* {
+    background-color: #020202;
+    color: #eaeaea;
+}
+
+window {
+    background-color: alpha(#020202, 0.93);
+    color: #eaeaea;
+}
+
+dialog {
+    background-color: alpha(#020202, 0.95);
+    color: #eaeaea;
+}
+
+dialog box {
+    background-color: #020202;
+    color: #eaeaea;
+}
+
+dialog label {
+    color: #eaeaea;
+    background-color: transparent;
+}
+
+/* ===== FIX BUTTONS (No white backgrounds) ===== */
+button {
+    background-image: none;
+    background-color: #a3a3a3;
+    color: #eaeaea;
+    border: 1px solid #a3a3a3;
+    border-radius: 3px;
+    padding: 6px 12px;
+    box-shadow: none;
+    text-shadow: none;
+}
+
+button:hover {
+    background-image: none;
+    background-color: #eaeaea;
+    color: #020202;
+    border: 1px solid #eaeaea;
+}
+
+button:active,
+button:checked {
+    background-image: none;
+    background-color: #eaeaea;
+    color: #020202;
+}
+
+button:disabled {
+    background-image: none;
+    background-color: alpha(#a3a3a3, 0.3);
+    color: #a3a3a3;
+}
+
+button label {
+    color: inherit;
+    background-color: transparent;
+}
+
+/* Fix suggested/destructive action buttons */
+button.suggested-action {
+    background-image: none;
+    background-color: #eaeaea;
+    color: #020202;
+}
+
+button.destructive-action {
+    background-image: none;
+    background-color: #ff5555;
+    color: #020202;
+}
+
+/* ===== NOTEBOOK TABS ===== */
+notebook {
+    background-color: #020202;
+    color: #eaeaea;
+}
+
+notebook header {
+    background-color: #020202;
+    border-bottom: 1px solid #a3a3a3;
+}
+
+notebook tab {
+    background-image: none;
+    background-color: alpha(#a3a3a3, 0.3);
+    color: #eaeaea;
+    border: 1px solid transparent;
+    padding: 8px 16px;
+}
+
+notebook tab:checked {
+    background-image: none;
+    background-color: alpha(#eaeaea, 0.2);
+    color: #eaeaea;
+    border-bottom: 2px solid #eaeaea;
+}
+
+notebook tab label {
+    color: inherit;
+    background-color: transparent;
+}
+
+notebook > stack {
+    background-color: #020202;
+}
+
+/* ===== LABELS ===== */
+label {
+    color: #eaeaea;
+    background-color: transparent;
+}
+
+/* ===== FRAMES ===== */
+frame {
+    border: 1px solid #a3a3a3;
+    background-color: #020202;
+}
+
+frame > border {
+    border: none;
+    background-color: transparent;
+}
+
+frame > label {
+    color: #eaeaea;
+}
+
+/* ===== LIST BOXES ===== */
+list {
+    background-color: #020202;
+    color: #eaeaea;
+    border: 1px solid #a3a3a3;
+}
+
+list row {
+    background-color: transparent;
+    color: #eaeaea;
+}
+
+list row:hover {
+    background-color: alpha(#a3a3a3, 0.3);
+}
+
+list row:selected {
+    background-color: alpha(#eaeaea, 0.3);
+    color: #eaeaea;
+}
+
+list row label {
+    color: inherit;
+}
+
+/* ===== SIDEBAR ===== */
+.sidebar {
+    background-color: #020202;
+    color: #eaeaea;
+    border-right: 1px solid #a3a3a3;
+}
+
+/* ===== MAIN VIEW ===== */
+.view {
+    background-color: transparent;
+    color: #eaeaea;
+}
+
+iconview {
+    background-color: transparent;
+    color: #eaeaea;
+}
+
+iconview:selected {
+    background-color: alpha(#eaeaea, 0.3);
+    color: #eaeaea;
+}
+
+treeview {
+    background-color: transparent;
+    color: #eaeaea;
+}
+
+treeview:selected {
+    background-color: alpha(#eaeaea, 0.3);
+    color: #eaeaea;
+}
+
+treeview header button {
+    background-image: none;
+    background-color: #020202;
+    color: #eaeaea;
+    border: 1px solid #a3a3a3;
+}
+
+/* ===== SCROLLBARS ===== */
+scrollbar {
+    background-color: transparent;
+}
+
+scrollbar slider {
+    background-color: alpha(#a3a3a3, 0.6);
+    border-radius: 10px;
+    min-width: 8px;
+    min-height: 8px;
+}
+
+scrollbar slider:hover {
+    background-color: alpha(#eaeaea, 0.8);
+}
+
+/* ===== ENTRY FIELDS ===== */
+entry {
+    background-image: none;
+    background-color: #020202;
+    color: #eaeaea;
+    border: 1px solid #a3a3a3;
+    border-radius: 3px;
+    padding: 6px;
+    box-shadow: none;
+}
+
+entry:focus {
+    border: 1px solid #eaeaea;
+    box-shadow: 0 0 3px alpha(#eaeaea, 0.5);
+}
+
+entry:disabled {
+    background-color: alpha(#a3a3a3, 0.2);
+    color: #a3a3a3;
+}
+
+/* ===== COMBOBOX ===== */
+combobox button {
+    background-image: none;
+    background-color: #a3a3a3;
+    color: #eaeaea;
+    border: 1px solid #a3a3a3;
+}
+
+combobox button arrow {
+    color: #eaeaea;
+}
+
+combobox menu {
+    background-color: #020202;
+    border: 1px solid #a3a3a3;
+}
+
+/* ===== HEADERBAR ===== */
+headerbar {
+    background-image: none;
+    background-color: #020202;
+    color: #eaeaea;
+    border-bottom: 1px solid #a3a3a3;
+    box-shadow: none;
+}
+
+headerbar button {
+    background-image: none;
+    background-color: transparent;
+}
+
+headerbar entry {
+    background-color: alpha(#020202, 0.7);
+}
+
+/* ===== MENUS ===== */
+menu {
+    background-color: #020202;
+    color: #eaeaea;
+    border: 1px solid #a3a3a3;
+}
+
+menuitem {
+    background-color: transparent;
+    color: #eaeaea;
+    padding: 6px 12px;
+}
+
+menuitem:hover {
+    background-color: alpha(#a3a3a3, 0.5);
+}
+
+menuitem:disabled {
+    color: #a3a3a3;
+}
+
+menuitem label {
+    color: inherit;
+}
+
+/* ===== TOOLBAR ===== */
+toolbar {
+    background-image: none;
+    background-color: #020202;
+    color: #eaeaea;
+    border-bottom: 1px solid #a3a3a3;
+}
+
+/* ===== PATHBAR ===== */
+.path-bar button {
+    background-image: none;
+    background-color: transparent;
+    border: none;
+}
+
+.path-bar button:hover {
+    background-color: alpha(#a3a3a3, 0.3);
+}
+
+/* ===== TOOLTIPS ===== */
+tooltip {
+    background-color: #020202;
+    color: #eaeaea;
+    border: 1px solid #a3a3a3;
+    border-radius: 3px;
+}
+
+tooltip label {
+    color: #eaeaea;
+}
+
+/* ===== POPOVERS ===== */
+popover {
+    background-color: #020202;
+    border: 1px solid #a3a3a3;
+}
+
+popover label {
+    color: #eaeaea;
+}
+
+/* ===== SELECTION BOX ===== */
+rubberband {
+    background-color: alpha(#eaeaea, 0.2);
+    border: 1px solid #eaeaea;
+}
+
+/* ===== CHECKBOXES & RADIO ===== */
+checkbutton check {
+    background-image: none;
+    background-color: #020202;
+    border: 1px solid #a3a3a3;
+    border-radius: 3px;
+}
+
+checkbutton check:checked {
+    background-image: none;
+    background-color: #eaeaea;
+    border-color: #eaeaea;
+    color: #020202;
+    -gtk-icon-source: -gtk-icontheme("object-select-symbolic");
+}
+
+checkbutton label {
+    color: #eaeaea;
+}
+
+radiobutton radio {
+    background-image: none;
+    background-color: #020202;
+    border: 1px solid #a3a3a3;
+}
+
+radiobutton radio:checked {
+    background-image: none;
+    background-color: #eaeaea;
+    border-color: #eaeaea;
+}
+
+radiobutton label {
+    color: #eaeaea;
+}
+
+/* ===== SPINBUTTONS ===== */
+spinbutton {
+    background-color: #020202;
+    color: #eaeaea;
+    border: 1px solid #a3a3a3;
+}
+
+spinbutton button {
+    background-image: none;
+    background-color: #a3a3a3;
+    color: #eaeaea;
+}
+
+/* ===== PROGRESS BARS ===== */
+progressbar {
+    background-color: alpha(#a3a3a3, 0.3);
+    border-radius: 3px;
+}
+
+progressbar progress {
+    background-image: none;
+    background-color: #eaeaea;
+    border-radius: 3px;
+}
+
+/* ===== SEPARATORS ===== */
+separator {
+    background-color: #a3a3a3;
+    min-height: 1px;
+    min-width: 1px;
+}
+
+/* ===== TEXT VIEWS ===== */
+textview {
+    background-color: #020202;
+    color: #eaeaea;
+}
+
+textview text {
+    background-color: transparent;
+    color: #eaeaea;
+}
+
+/* ===== SCALES (Sliders) ===== */
+scale {
+    background-color: transparent;
+}
+
+scale trough {
+    background-color: #a3a3a3;
+}
+
+scale slider {
+    background-image: none;
+    background-color: #eaeaea;
+    border: 1px solid #eaeaea;
+}
+
+/* ===== PREVENT ANY WHITE BACKGROUNDS ===== */
+.background {
+    background-color: #020202;
+}
+
+box {
+    background-color: transparent;
+}
+
+grid {
+    background-color: transparent;
+}

@@ -1,0 +1,5 @@
+#!/bin/bash
+WALLPAPER=$(find /home/harman/wallpapers -type f | rofi -dmenu -i -p "Select Wallpaper:")
+if [ -n "$WALLPAPER" ]; then
+    wal -i "$WALLPAPER"
+fi

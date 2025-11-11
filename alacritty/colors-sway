@@ -1,0 +1,21 @@
+set $wallpaper /home/harman/wallpapers/Cat.jpg
+
+set $background #020202
+set $foreground #eaeaea
+
+set $color0 #020202
+set $color1 #9D9DA0
+set $color2 #B1B1B1
+set $color3 #C2C3BF
+set $color4 #D1D1D1
+set $color5 #DFE0DE
+set $color6 #E1E1DE
+set $color7 #eaeaea
+set $color8 #a3a3a3
+set $color9 #9D9DA0
+set $color10 #B1B1B1
+set $color11 #C2C3BF
+set $color12 #D1D1D1
+set $color13 #DFE0DE
+set $color14 #E1E1DE
+set $color15 #eaeaea

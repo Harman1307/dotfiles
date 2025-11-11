@@ -1,0 +1,23 @@
+" Special
+let wallpaper  = "/home/harman/wallpapers/Cat.jpg"
+let background = "#020202"
+let foreground = "#eaeaea"
+let cursor     = "#eaeaea"
+
+" Colors
+let color0  = "#020202"
+let color1  = "#9D9DA0"
+let color2  = "#B1B1B1"
+let color3  = "#C2C3BF"
+let color4  = "#D1D1D1"
+let color5  = "#DFE0DE"
+let color6  = "#E1E1DE"
+let color7  = "#eaeaea"
+let color8  = "#a3a3a3"
+let color9  = "#9D9DA0"
+let color10 = "#B1B1B1"
+let color11 = "#C2C3BF"
+let color12 = "#D1D1D1"
+let color13 = "#DFE0DE"
+let color14 = "#E1E1DE"
+let color15 = "#eaeaea"

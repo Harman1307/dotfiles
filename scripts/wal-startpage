@@ -1,0 +1,20 @@
+#!/bin/bash
+source ~/.cache/wal/colors.sh
+
+cat > ~/.config/startpage/colors.css << CSS
+:root {
+    --background: ${color0};
+    --foreground: ${color7};
+    --color1: ${color1};
+    --color2: ${color2};
+    --color3: ${color3};
+    --color4: ${color4};
+    --color5: ${color5};
+    --color6: ${color6};
+    --color8: ${color8};
+    --color15: ${color15};
+}
+CSS
+
+# Update the style.css to use colors
+sed -i '1s|^|@import url("colors.css");\n|' ~/.config/startpage/style.css

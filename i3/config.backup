@@ -1,0 +1,85 @@
+# === i3 CONFIG — MOD WORKING + ALL BINDS ===
+set $mod Mod4
+
+# Focus
+bindsym $mod+Left  focus left
+bindsym $mod+Down  focus down
+bindsym $mod+Up    focus up
+bindsym $mod+Right focus right
+
+# Move
+bindsym $mod+Shift+Left  move left
+bindsym $mod+Shift+Down  move down
+bindsym $mod+Shift+Up    move up
+bindsym $mod+Shift+Right move right
+
+# Workspaces
+bindsym $mod+1 workspace number 1
+bindsym $mod+2 workspace number 2
+bindsym $mod+3 workspace number 3
+bindsym $mod+4 workspace number 4
+bindsym $mod+5 workspace number 5
+bindsym $mod+Shift+1 move container to workspace 1
+bindsym $mod+Shift+2 move container to workspace 2
+bindsym $mod+Shift+3 move container to workspace 3
+bindsym $mod+Shift+4 move container to workspace 4
+bindsym $mod+Shift+5 move container to workspace 5
+
+# Apps
+bindsym $mod+Return exec alacritty
+bindsym $mod+d exec rofi -show drun -config ~/.config/rofi/config.rasi
+bindsym $mod+e exec thunar
+bindsym $mod+Shift+q kill
+
+# Layout
+bindsym $mod+Tab   focus next
+bindsym $mod+Shift+Tab focus prev
+
+# Gaps & Border
+gaps inner 4
+gaps outer 4
+default_border pixel 1
+
+# Font
+font pango:JetBrainsMono Nerd Font 9
+
+include-file = ~/.cache/wal/colors-i3
+
+# Startup
+exec --no-startup-id picom -b
+exec --no-startup-id feh --bg-fill /home/harman/wallpapers/Cat.jpg
+exec --no-startup-id wal -i /home/harman/wallpapers/Cat.jpg -q
+
+# Pywal colors
+set_from_resource $fg i3wm.color7 #f0f0f0
+set_from_resource $bg i3wm.color0 #000000
+set_from_resource $accent i3wm.color4 #0000ff
+
+client.focused          $accent $accent    $fg     $accent
+client.focused_inactive $bg     $bg        $fg     $bg
+client.unfocused        $bg     $bg        $fg     $bg
+client.urgent           $bg     $bg        $fg     $bg
+
+exec_always --no-startup-id wal-startup
+exec --no-startup-id ~/bin/apply-pywal-locked
+exec --no-startup-id ~/.config/polybar/launch.sh
+
+
+
+
+# === VOLUME CONTROL: F1/F2/F3 (NO FN KEY REQUIRED) ===
+
+# === VOLUME KEYS (F1, F2, F3) ===
+
+
+
+
+
+
+
+
+
+# Volume Control
+bindsym XF86AudioMute exec --no-startup-id amixer set Master toggle
+bindsym XF86AudioLowerVolume exec --no-startup-id amixer set Master 5%-
+bindsym XF86AudioRaiseVolume exec --no-startup-id amixer set Master 5%+

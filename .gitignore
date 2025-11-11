@@ -1,0 +1,24 @@
+# Cache
+*.cache
+*cache*
+*.log
+
+# VSCode workspace
+**/*.code-workspace
+**/workspaceStorage/
+**/globalStorage/
+
+# Screenshots (we'll add manually)
+screenshots/*.png
+
+# Backup files
+*.bak
+*~
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Temp
+*.tmp
+*.swp

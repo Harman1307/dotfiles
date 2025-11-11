@@ -1,0 +1,4 @@
+#!/bin/bash
+wal -R -n
+~/.config/polybar/launch.sh &
+i3-msg reload

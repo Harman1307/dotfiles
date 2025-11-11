@@ -1,0 +1,7 @@
+#!/bin/bash
+wal "$@"
+~/.local/bin/wal-vscode
+~/.local/bin/wal-gtk
+~/.local/bin/wal-startpage
+~/.local/bin/wal-brave
+~/.local/bin/wal-mpv

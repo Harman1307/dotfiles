@@ -1,0 +1,5 @@
+#!/bin/bash
+source ~/.cache/wal/colors.sh
+
+sed -i "s/gradient_color_1 = .*/gradient_color_1 = '${color15}'/" ~/.config/cava/config
+sed -i "s/gradient_color_2 = .*/gradient_color_2 = '${color8}'/" ~/.config/cava/config
